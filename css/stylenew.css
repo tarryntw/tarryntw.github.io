@@ -9,15 +9,7 @@
     box-sizing: border-box;
     background-color: var(--content-bg-color2);
   }
-  .header{
-    margin-top: 10px;
-    height: 55px;
-    display: flex;
-    justify-content: left;
-    align-items: center; 
-    background-color: var(--nav-bg-color);
-    padding: 15px;
-  }
+
   
   .row::after {
     content: "";
@@ -57,7 +49,37 @@
       justify-content: center;
       flex-direction: row;
     }
-  
+    .header{
+      margin-top: 10px;
+      height: 55px;
+      display: flex;
+      justify-content: left;
+      align-items: center; 
+      background-color: var(--nav-bg-color);
+      padding: 15px;
+    }
+    .nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    .nav-left{
+      position: absolute;
+      left: 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .nav-right{
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
 }
 
 /*mobile*/
@@ -84,31 +106,33 @@
       justify-content: center;
       flex-direction: column;
     }
-  
+    .header{
+      height: inherit;
+      display: flex;
+      justify-content: left;
+      align-items: center; 
+      background-color: var(--nav-bg-color);
+      padding: 15px;
+    }
+    .nav{
+      height: inherit;
+    }
+    .nav-left{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding-bottom: 10px;
+    }
+    .nav-right{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
 }
 
-.nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.nav-left{
-  position: absolute;
-  left: 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.nav-right{
-  position: absolute;
-  right: 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
+
 
 .navbar-item{
     margin-left: 10px;
